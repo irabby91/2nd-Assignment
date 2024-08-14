@@ -7,6 +7,13 @@
     font-style: normal;
   }
 
+  @import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
+  .grey-qo-regular {
+    font-family: "Grey Qo", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
   .bg{
     background-color: black;
   }
@@ -51,3 +58,112 @@
     color: #FFFFFF;
     font-weight: 600;
   }
+
+
+  /*Below nav bar section*/
+  .headlines{
+    display: flex;
+    flex-direction: column;
+    column-gap 24px;
+    max-height: 440px;
+  }
+
+  .headline{
+    color: #FFFFFF;
+    font-size: 4.875rem;
+    font-weight: 900;
+    font-family: inter;
+    max-width: 520px;
+    max-height: 282px;
+    margin-bottom: 24px;
+  }
+  .description{
+    color: #FFFFFF;
+    font-family: inter;
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 520px;
+    margin-bottom: 24px;
+  }
+  .shape{
+    font-family: "Grey Qo", cursive;
+    font-size: 4.875rem;
+    font-weight: 900;
+    color: #FFFFFF;
+  }
+
+  .btn-1{
+    border-radius: 42px;
+    background-color: #E6533C;
+    width: 224px;
+    height: 54px;
+    border: none;
+    font-family: inter;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+
+  .btn-2{
+    border-radius: 42px;
+    background-color:black ;
+    width: 224px;
+    height: 54px;
+    border: 1px solid rgb(255, 255, 255);
+    font-family: inter;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+  .img2{
+    max-width: 349px;
+    max-height: 580px;
+  }
+  .below-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 190px;
+    margin-right: 214px;
+  }
+
+  .video-workout{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    height: 98px;
+    width: 193px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 260px;
+    margin-left: 1107px;
+  }
+  .video-workout2{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    height: 96px;
+    width: 206px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .five{
+        font-family: inter;
+        font-size: 2.5rem;
+        font-weight: 900;
+        color: #FFFFFF;
+        margin-bottom: 5px;
+  }
+  .workout{
+    font-family: inter;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
+    overflow: auto;
+  }
+
+  /* Main Body part */
