@@ -78,7 +78,7 @@
     margin-bottom: 24px;
   }
   .description{
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.5);
     font-family: inter;
     font-size: 1rem;
     font-weight: 400;
@@ -167,3 +167,68 @@
   }
 
   /* Main Body part */
+
+  .habit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .habit-logo{
+    font-family: inter;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+  }
+  .habit-para{
+    font-family: inter;
+    font-size: 1rem;
+    font-weight: 400px;
+    color: rgba(255, 255, 255, 0.5);
+    max-width: 671px;
+    text-align: center;
+  }
+
+  .below-habit-imgs{
+    border: none;
+    border-radius: 100px;
+    max-width: 272px;
+    max-height: 180px;
+  }
+  .below-habit-header{
+    font-family: inter;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+  }
+  .below-habit-para{
+    font-family: inter;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    max-width: 230px;
+    max-height: 36px;
+    text-align: center;
+  }
+
+  .below-habit{
+    display: flex;
+    gap: 25px;
+    justify-content: space-evenly;
+    justify-items: center;
+    max-width: 1044px;
+    margin-left: 200px;
+    margin-right: 200px;
+    
+  }
+  .habit-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
