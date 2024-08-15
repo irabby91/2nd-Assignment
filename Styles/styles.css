@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
 
 .inter-font {
     font-family: "Inter", sans-serif;
@@ -7,7 +8,6 @@
     font-style: normal;
   }
 
-  @import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
   .grey-qo-regular {
     font-family: "Grey Qo", cursive;
     font-weight: 400;
@@ -18,78 +18,85 @@
     background-color: black;
   }
 
-  .nav-bar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 190px;
-    margin-right: 194px;
-  }
+  /* Header Navigation Bar */
+
   .header-logo{
-    font-family: "Inter", sans-serif;
+    font-family: inter;
     font-size: 2.25rem;
     font-weight: 800;
-    color: #E6533C;
+    color: rgb(230, 83, 60);
   }
 
   .nav-list{
     list-style: none;
-    
     display: flex;
-    flex-direction: row;
     gap: 47px;
     align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    width: 465px;
+    height: 46px;
     
   }
+  .nav-list-dec{
+    box-sizing: border-box;
+    
+  }
+
+  .home{
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+    width: 92px;
+    height: 38px;
+    border: none;
+    font-family: Inter;
+    font-size: 1.125rem;
+    color: white;
+  }
+
   .nav-text{
-    text-decoration: none;
     font-family: inter;
     font-size: 1.125rem;
     font-weight: 400;
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
   }
-  .home{
-    border: none;
-    background-color: #E6533C;
-    border-radius: 46px;
-    width: 92px;
-    height: 38px;
-    color: #FFFFFF;
-    font-weight: 600;
-  }
-
-
-  /*Below nav bar section*/
-  .headlines{
+  .nav-bar{
     display: flex;
-    flex-direction: column;
-    column-gap 24px;
-    max-height: 440px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1060px;
+    margin: 0 auto;
   }
+
+  .nav-mob{
+    display: none;
+  }
+
+  /* After Navigation bar properties */
 
   .headline{
-    color: #FFFFFF;
+    font-family: inter;
     font-size: 4.875rem;
     font-weight: 900;
-    font-family: inter;
-    max-width: 520px;
-    max-height: 282px;
-    margin-bottom: 24px;
+    max-width: 480px;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
   }
-  .description{
-    color: rgba(255, 255, 255, 0.5);
-    font-family: inter;
-    font-size: 1rem;
-    font-weight: 400;
-    max-width: 520px;
-    margin-bottom: 24px;
-  }
+
   .shape{
     font-family: "Grey Qo", cursive;
     font-size: 4.875rem;
     font-weight: 900;
-    color: #FFFFFF;
+  }
+
+  .description{
+    font-family: inter;
+    font-size: 1rem;
+    font-weight: 400;
+     color: rgba(255, 255, 255, 0.5);
+    max-width: 480px;
+    margin: 0 auto;
   }
 
   .btn-1{
@@ -115,16 +122,20 @@
     font-weight: 600;
     color: #FFFFFF;
   }
-  .img2{
-    max-width: 349px;
-    max-height: 580px;
+
+  .btn-mob{
+    display: none;
   }
-  .below-nav{
+
+  .headlines{
     display: flex;
-    justify-content: space-between;
-    margin-left: 190px;
-    margin-right: 214px;
+    flex-direction: column;
+    max-width: 520px;
+    margin: 0 auto;
+    gap: 28px;
   }
+
+  /* After navigation bar Image section */
 
   .video-workout{
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -138,6 +149,7 @@
     justify-content: center;
     margin-top: 260px;
     margin-left: 1107px;
+
   }
   .video-workout2{
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -150,47 +162,75 @@
     align-items: center;
     justify-content: center;
   }
-
   .five{
-        font-family: inter;
-        font-size: 2.5rem;
-        font-weight: 900;
-        color: #FFFFFF;
-        margin-bottom: 5px;
-  }
-  .workout{
     font-family: inter;
-    font-size: 0.8125rem;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.65);
-    overflow: auto;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+    .workout{
+    font-family: inter;
+font-size: 0.8125rem;
+font-weight: 400;
+color: rgba(255, 255, 255, 0.65);
+
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 349px;
+  }
+  .container img{
+    width: 349px;
+    height: 580px;
+  }
+  .container .video-workout{
+    position: absolute;
+    top: -22%;
+    right: -15%;
+
   }
 
-  /* Main Body part */
+  .container .video-workout2{
+    position: absolute;
+    top: 70%;
+    left: -15%;
+  }
 
-  .habit{
+  .below-nav{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 167px;
+    margin: 0 auto;
+    padding-right: 214px;
+    padding-left: 190px;
     margin-top: 100px;
-    margin-bottom: 60px;
-    margin-left: 200px;
-    margin-right: 200px;
+    max-width: 100%;
+    margin-bottom: 100px;
   }
-  .habit-logo{
+
+  /* Change Your Habit Section */
+
+  .title{
     font-family: inter;
     font-size: 3rem;
     font-weight: 900;
     color: #FFFFFF;
     margin-bottom: 14px;
   }
-  .habit-para{
+  .title-des{
     font-family: inter;
-    font-size: 1rem;
-    font-weight: 400px;
+    font-size: 0.875rem;
+    font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
-    max-width: 671px;
-    text-align: center;
+    max-width: 620px;
+    text-align: center; 
+  }
+
+  .habit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .below-habit-imgs{
@@ -215,31 +255,31 @@
     max-height: 36px;
     text-align: center;
   }
-
-  .below-habit{
-    display: flex;
-    gap: 70px;
-    justify-content: space-between;
-    justify-items: center;
-    max-width: 1044px;
-    margin-left: 200px;
-    margin-right: 200px;
-    
-  }
   .habit-section{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 6px;
   }
-  /* Run extra mile section */
-  .run-head{
+  .below-habit{
+    display: flex;
+    gap: 70px;
+    justify-content: space-between;
+    justify-items: center;
+    max-width: 1044px;
+    margin: 0 auto;
+    padding-top: 54px;
+    padding-bottom: 100px;  
+  }
+
+  /* Run an Extra Mile Section */
+  .run-title{
     font-family: Inter;
     font-size: 3rem;
     font-weight: 900;
     color: #FFFFFF;
-    max-width: 400px;
-    max-height: 116px;
+    width: 400px;
+    height: 116px;
     margin-bottom: 14px;
 
   }
@@ -249,7 +289,7 @@
     font-size: 0.875rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
-    max-width: 400px;
+    width: 400px;
     margin-bottom: 34px;
   }
 
@@ -265,373 +305,514 @@
     border: none;
   }
   .run-img{
-    max-width: 366px;
-    max-height: 312px;
+    width: 366px;
+    height: 312px;
     border-radius: 18px;
+  }
+
+  .run-extra{
+    display: flex;
+    flex-direction: column;
+    max-width: 443px;
+    margin: 0 auto;
   }
 
   .run-main{
     display: flex;
     justify-content: space-between;
-    margin-left: 200px;
-    margin-top: 100px;
     align-items: center;
     max-width: 1060px;
-    max-height: 370px;
+    gap: 165px;
     border-radius: 18px;
     background: rgb(34, 34, 34);
+    margin: 0 auto;
     padding-left: 54px;
-    padding-right: 32px;
-    padding-bottom: 40px;
-    padding-top: 41px;
-    
+    padding-right: 54px;
+    padding: 30px;
+    padding-bottom: 30px;
   }
 
-  /* trainning and exercise section */
-.train-head{
-    font-family: Inter;
-    font-size: 3rem;
-    font-weight: 900;
-    color: #FFFFFF;
-    max-width: 573px;
-    max-height: 58px;
-    margin-bottom: 14px;
-}
 
-.train-para{
+  /* Run an Extra mile section end */
+
+  /* BMI Calculator Section */
+
+  .bmi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .table-data{
+    border-collapse: collapse;
+    margin-top: 13px;
+    margin-left: 18px;
+    margin-right: 70px;
+    max-width: 100%;
+  }
+  
+  td, th{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+    padding: 13px;
+  }
+  .table-text{
+    font-family: inter;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FFFFFF;
+  
+  }
+  
+  .table-text1{
     font-family: inter;
     font-size: 0.875rem;
     font-weight: 400;
-    color:rgba(255, 255, 255, 0.5);
-    max-width: 640px;
-    max-height: 48px;
-    margin-bottom: 58px;
-}
-
-.train-img{
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .calculator{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
+    justify-content: space-between;
+    gap: 175px;
+    padding-left: 189px;
+    padding-right: 189px;
+    background: rgb(34, 34, 34);
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .age{
+    width: 283px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding-left: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+  }
+  .activity-factor{
+    width: 600px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding-left: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+  }
+  
+  .bmi-form{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 10px;
+  }
+  .bmi-calculator{
+    display: flex;
+    flex-direction: column;
+  }
+  .bmi-calc-section{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+  .calculate{
+    height: 54px;
+    width: 224px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-weight: 600;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 52px;
+  }
+  .calc-chart{
+    font-family: inter;
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: #FFFFFF;
+  }
+  .bmi-para{
+    font-family: inter;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    max-width: 640px;
+  }
+  /* Team Section */
+
+  .team{
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    margin-bottom: 58px;
+  }
+  .name{
+    font-family: Inter;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    position: absolute;
+    top: 55%;
+    padding: 20px;
+  }
+  .title-team{
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 68%;
+    padding: 20px;
+  }
+  
+  .trainer-container img{
+    width: 327px;
+    height: 272px;
+    border-radius: 18px;
+  
+  }
+  .trainer-container{
+    position: relative;
+    
+  }
+  
+  .image-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
     max-width: 1060px;
-    max-height: 580px;
-}
-.img1{
-    max-width: 323px;
-    max-height: 218px;
-    background: rgba(6, 255, 210, 0.5),url(3);
-}
-.img2{
-    max-width: 539px;
-    max-height: 256px;
-    background: rgba(6, 255, 210, 0.5),url(3);
-}
-.img3{
-    max-width: 388px;
-    max-height: 214px;
-    background: rgba(6, 255, 210, 0.5),url(3);
-}
-.img4{
-    max-width: 435px;
-    max-height: 240px;
-    background: rgba(6, 255, 210, 0.5),url(3);
-}
-.img5{
-    max-width: 408px;
-    max-height: 219px;
-    background: rgba(6, 255, 210, 0.5),url(3);
-}
-.img6{
-    max-width: 376px;
-    max-height: 250px;
-    background: rgba(6, 255, 210, 0.5),url(3);
-}
+    padding: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0 auto;
+    margin-bottom: 64px;
+  }
 
-/* Bmi Caclculator */
+  /* Footer Section */
 
-.bmi-calc{
-  font-family: inter;
-  font-size: 3rem;
-  font-weight: 900;
-  color: #FFFFFF;
-
-}
-
-.bmi-para{
-  font-family: inter;
-  font-size: 0.875rem;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.5);
-  margin-top: 14px;
-  max-width: 640px;
-}
-.bmi{
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-  margin-bottom: 99px;
-  align-items: center;
-}
-
-/* calculator chart */
-
-.calc-chart{
-  font-family: inter;
-  font-size: 1.75rem;
-  font-weight: 900;
-  color: #FFFFFF;
-}
-.table-data{
-  border-collapse: collapse;
-  margin-top: 13px;
-  margin-left: 18px;
-  margin-right: 70px;
-  max-width: 100%;
-}
-
-td, th{
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  text-align: left;
-  padding: 13px;
-}
-.table-text{
-  font-family: inter;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #FFFFFF;
-
-}
-
-.table-text1{
-  font-family: inter;
-  font-size: 0.875rem;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.bmi-table{
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  max-width: 4430px;
-}
-
-.calculator{
-  display: flex;
-  justify-content: space-between;
-  gap: 175px;
-  padding-left: 189px;
-  padding-right: 189px;
-  background: rgb(34, 34, 34);
-  max-width: 100%;
-}
-
-.height-cm{
-  width: 283px;
-  height: 48px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  padding-left: 20px;
-  color: rgba(255, 255, 255, 0.6);
-  font-family: Inter;
-  font-size: 1rem;
-  font-weight: 400;
-  border: none;
-}
-.weight-kg{
-  width: 283px;
-  height: 48px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  padding-left: 20px;
-  color: rgba(255, 255, 255, 0.6);
-  font-family: Inter;
-  font-size: 1rem;
-  font-weight: 400;
-  border: none;
-}
-.age{
-  width: 283px;
-  height: 48px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  padding-left: 20px;
-  color: rgba(255, 255, 255, 0.6);
-  font-family: Inter;
-  font-size: 1rem;
-  font-weight: 400;
-  border: none;
-}
-.sex{
-  width: 283px;
-  height: 48px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  padding-left: 20px;
-  color: rgba(255, 255, 255, 0.6);
-  font-family: Inter;
-  font-size: 1rem;
-  font-weight: 400;
-  border: none;
-}
-.activity-factor{
-  width: 600px;
-  height: 48px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  padding-left: 20px;
-  color: rgba(255, 255, 255, 0.6);
-  font-family: Inter;
-  font-size: 1rem;
-  font-weight: 400;
-  border: none;
-}
-
-.bmi-form{
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 10px;
-}
-.bmi-calculator{
-  display: flex;
-  flex-direction: column;
-}
-.calculate{
-  height: 54px;
-  width: 224px;
-  border-radius: 42px;
-  background: rgb(230, 83, 60);
-  color: #FFFFFF;
-  font-family: Inter;
-  font-size: 1.125rem;
-  font-weight: 600;
-  border: none;
-  margin-top: 10px;
-  margin-bottom: 52px;
-}
-
-/* After Challange part */
-
-.team{
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-  margin-bottom: 58px;
-}
-.name{
-  font-family: Inter;
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #FFFFFF;
-  position: absolute;
-  top: 55%;
-  padding: 20px;
-}
-.title{
-  font-family: Inter;
-  font-size: 0.875rem;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.8);
-  position: absolute;
-  top: 68%;
-  padding: 20px;
-}
-
-.trainer-container img{
-  width: 327px;
-  height: 272px;
-  border-radius: 18px;
-
-}
-.trainer-container{
-  position: relative;
+  .footer-header{
+    font-family: inter;
+    font-size: 4.375rem;
+    font-weight: 800;
+    color: #E6533C;
+    margin-bottom: 20px;
+  }
   
-}
-
-.image-container{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  justify-items: center;
-  max-width: 1060px;
-  padding: 20px;
-  border-radius: 18px;
-background: rgba(255, 255, 255, 0.1);
-margin-left: 190px;
-margin-right: 190px;
-margin-bottom: 88px
-}
-
-/* Footer */
-
-.footer-header{
-  font-family: inter;
-  font-size: 4.375rem;
-  font-weight: 800;
-  color: #E6533C;
-  margin-bottom: 20px;
-}
-
-.footer-text{
-  font-family: inter;
-  font-size: 0.875rem;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.5);
-  width: 420px;
-}
-
-.get-started{
-  font-family: inter;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #FFFFFF;
-}
-
-.list-item-footer{
-  list-style: none;
-  text-align: left;
+  .footer-text{
+    font-family: inter;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    width: 420px;
+  }
   
-}
-.list-text{
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.5);
-  font-family: inter;
-  font-size: 1.4375rem;
-  font-weight: 400;
-  line-height: 120%;
-}
-ul li{
-  margin-bottom: 20px;
-}
+  .get-started{
+    font-family: inter;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+  
+  .list-item-footer{
+    list-style: none;
+    text-align: left;
+    
+  }
+  .list-text{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: inter;
+    font-size: 1.4375rem;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  ul li{
+    margin-bottom: 20px;
+  }
+  
+  .footer-ul{
+    display: flex;
+    gap: 152px;
+  }
+  .ul2{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  
+  .footer-section{
+    display: flex;
+    gap: 102px;
+    margin-left: 190px;
+    margin-right: 190px;
+    justify-items: flex-start;
+    margin-bottom: 80px;
+  }
+  
+  .copy-right{
+    font-family: inter;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    max-width: 318px;
+    margin: 0 auto;
+    margin-top: 36px;
+  }
+  .footer-bg{
+    background: rgba(255, 255, 255, 0.1);
+    max-width: 100%;
+    padding-bottom: 40px;
+  }
 
-.footer-ul{
-  display: flex;
-  gap: 152px;
-}
-.ul2{
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-}
+  @media screen and (max-width:576px) {
 
-.footer-section{
-  display: flex;
-  gap: 102px;
-  margin-left: 190px;
-  margin-right: 190px;
-  justify-items: flex-start;
-  margin-bottom: 80px;
-}
+    .nav-mob{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 353px;
+        margin-left: 20px;
+    }
+    .nav-bar{
+        display: none;
 
-.copy-right{
-  font-family: inter;
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.5);
-  margin-left: 38%;
-  margin-right: 38%;
-}
+    }
+    .dropdown a{
+        display: block;
+        text-decoration: none;
+        font-family: inter;
+        font-size: 1.125rem;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+        padding: 10px 15px;
+      }
+    
+      .dropdown .dropdown-content{
+        position: absolute;
+        display: none;
+      }
+    
+      .dropdown:hover .dropdown-content{
+        display: block;
+      }
+
+      .headlines{
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    .btn{
+        display: none;
+    }
+
+
+    .btn-mob{
+        display: flex;
+        gap: 14px;
+    }
+
+    .headlines{
+        max-width: 353px;
+        margin: 0 auto;
+    }
+    .headline{
+        font-family: inter;
+        font-size: 2.25rem;
+        font-weight: 900;
+        max-width: 285px;
+        margin: 0 auto;
+        color: rgb(255, 255, 255);
+      }
+
+    .below-nav{
+        flex-direction: column;
+        max-width: 353px;
+        margin: 0 auto;
+        gap: 48px;
+        padding-left: 20px;
+    }
+    .container .video-workout{
+        position: absolute;
+        top: -35%;
+        left: 75%;
+    
+      }
+    
+      .container .video-workout2{
+        position: absolute;
+        top: 50%;
+        left: 0%;
+      }
+      .video-workout{
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        height: 75px;
+        width: 146px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 260px;
+        margin-left: 1107px;
+    
+      }
+    .video-workout2{
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        height: 73px;
+        width: 156px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    .five{
+        font-family: inter;
+        font-size: 1.89rem;
+        font-weight: 900;
+        color: #FFFFFF;
+        margin-bottom: 5px;
+    }
+    .workout{
+        font-family: inter;
+        font-size: 0.614375rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.65);
+    
+    }
+
+    .below-habit{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 36px;
+    }
+
+    .title{
+        font-family: inter;
+        font-size: 2rem;
+        font-weight: 900;
+        color: #FFFFFF;
+        margin-bottom: 14px;
+      }
+      .title-des{
+        font-family: inter;
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.5);
+        max-width: 300px;
+        text-align: center; 
+      }
+
+      .habit-up{
+        max-width: 338px;
+      }
+
+      .run-main{
+        flex-direction: column;
+        max-width: 338px;
+        margin: 0 auto;
+        margin-left: 20px;
+        gap: 31px;
+        align-items: center;
+        margin-bottom: 66px;
+      }
+      .run-para{
+        max-width: 280px;
+      }
+      .run-extra{
+        max-width: 280px;
+        margin: 0 auto;
+      }
+      .run-img{
+        width: 287px;
+        height: 170px;
+        border-radius: 18px;
+      }
+
+      .calculator{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 63px;
+        gap: 57px;
+      }
+      .age{
+        width: 171px;
+        height: 48px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        padding-left: 20px;
+        color: rgba(255, 255, 255, 0.6);
+        font-family: Inter;
+        font-size: 1rem;
+        font-weight: 400;
+        border: none;
+      }
+      .activity-factor{
+        width: 353px;
+        height: 48px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.1);
+        padding-left: 20px;
+        color: rgba(255, 255, 255, 0.6);
+        font-family: Inter;
+        font-size: 1rem;
+        font-weight: 400;
+        border: none;
+      }
+
+      .image-container{
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 353px;
+        margin: 0 auto;
+        gap: 20px;
+        margin-bottom: 66px;
+
+
+      }
+
+      .trainer{
+        width: 313px;
+        height: 272px;
+      }
+      .copy-right{
+        font-size: 1.25rem;
+        width: 318px;
+        margin-left: 18px;
+      }
+
+      .footer-text{
+        max-width: 317px;
+        margin: 0 auto;
+      }
+    
+      .footer-section{
+        flex-direction: column;
+        margin-left: 20px;
+        gap: 0px;
+      }
+    
+      .get-get{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      .footer-ul{
+        flex-direction: column;
+        gap: 0px;
+      }
+  }
